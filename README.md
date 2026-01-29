@@ -59,7 +59,120 @@ This is **not just another theory course**. By the end, you will be able to code
 - **AI Coding Assistant** — Voice-enabled coding helper (Cursor IDE clone)
 - **Multi-Modal LLMs** — Processing images and text together
 
-What is MCP and why it matters for AI apps.
+### 🔷 Model Context Protocol (MCP)
+
+- **What is MCP** — Why it matters for AI applications
+- **MCP Transports** — STDIO and SSE protocols
+- **Building MCP Servers** — Creating MCP servers with Python
+- **Integration** — Connecting MCP with AI agents
+
+---
+
+## 🏗️ Real-World Projects You'll Build
+
+1. **Tokenizer from Scratch** — Understand tokenization at a deep level
+2. **Local Ollama + FastAPI App** — Deploy LLMs locally with API endpoints
+3. **Python CLI Coding Assistant** — Build a command-line AI helper
+4. **Document RAG Pipeline** — End-to-end document processing with LangChain
+5. **Scalable RAG System** — Queue-based architecture with Redis & FastAPI
+6. **AI Voice Agent** — Conversational agent with STT + GPT + TTS
+7. **Graph Memory Agent** — Knowledge graphs with Neo4j integration
+8. **MCP-Powered AI Server** — Build custom MCP servers
+
+---
+
+## 👥 Who Is This Course For?
+
+✅ **Beginners** — Want a complete start-to-finish course on Python + AI
+
+✅ **Full-Stack Developers** — Build real-world AI apps using LLMs, RAG, and LangChain
+
+✅ **Data Engineers** — Looking to integrate AI into existing stacks
+
+✅ **Backend Developers** — Want to master AI system design and deployment
+
+✅ **Students & Professionals** — Aiming to upskill in modern AI engineering
+
+---
+
+## 🚀 Why Take This Course?
+
+This course **combines theory, coding, and deployment** in one place. You'll start from the basics of Python and Git, and by the end, you'll be coding cutting-edge AI applications with **LangChain, LangGraph, Ollama, Hugging Face, and more**.
+
+### What Makes This Different?
+
+Unlike other courses, this one **doesn't stop at "calling APIs."** You will go deeper into:
+
+- 🏗️ **System design and architecture**
+- ⚙️ **Queues and asynchronous processing**
+- 📈 **Scaling techniques**
+- 🧠 **Memory and graph-powered AI agents**
+- 🛠️ **Production deployment patterns**
+
+Everything you need to **stand out as a professional AI Engineer**.
+
+---
+
+## 📚 What You'll Learn (Summary)
+
+✅ Write **Python programs from scratch** with Git and Docker
+
+✅ Use **Pydantic** for structured data and validation
+
+✅ Understand **how LLMs work** — tokenization, embeddings, attention, and transformers
+
+✅ **Call & integrate** APIs from OpenAI and Gemini
+
+✅ Design **effective prompts** — zero-shot, one-shot, few-shot, chain-of-thought, persona-based, structured
+
+✅ **Run & deploy models locally** using Ollama, Hugging Face, and Docker
+
+✅ Implement **RAG pipelines** with LangChain and vector databases
+
+✅ Use **LangGraph** to design stateful AI systems with nodes, edges, and checkpointing
+
+✅ Understand and build **MCP servers** with Python
+
+✅ Deploy **production-grade AI applications**
+
+---
+
+## ❓ Course Requirements & Prerequisites
+
+### ✅ What You Need
+
+- A **computer** (Windows, macOS, or Linux) with internet access
+- **Text editor or IDE** (VS Code recommended — free)
+- **Python 3.8+** (installation covered in course)
+- **API keys** for OpenAI/Gemini (optional, free trials available)
+
+### 📋 What You Don't Need
+
+- ❌ **No prior AI knowledge** — We start from the absolute basics
+- ❌ **No advanced math** — We explain concepts simply and intuitively
+- ❌ **No deep ML background** — The course is self-contained
+- ✅ **Basic programming knowledge** — Helpful but not mandatory (covered in course)
+
+---
+
+## 👨‍🎓 Who This Course Is For
+
+- 👶 **Beginners** — Want a step-by-step path into AI, Python, and modern development tools
+- 💼 **Developers** — Want to integrate LLMs, RAG, and agents into real-world applications
+- 🔧 **Data Engineers/Backend Developers** — Looking to upgrade with AI-powered systems
+- 🎓 **Students** — Want to learn cutting-edge AI engineering
+- 🚀 **Career Changers** — Aiming to break into AI and machine learning
+- 📊 **Professionals** — Want to stand out in the job market with modern AI skills
+
+---
+
+## 🎯 By the End of This Course
+
+**You won't just understand AI—you'll be able to build it.**
+
+From tokenizers to multi-modal agents, from local model deployments to production-grade scalable systems, you'll have the **complete toolkit** to become a professional **AI Engineer**.
+
+**Let's build the future together! 🚀**
 
 MCP transports: STDIO and SSE.
 
