@@ -11,7 +11,7 @@ from typing import Optional
 
 load_dotenv()
 client = OpenAI(
-    api_key="AIzaSyDt-pF4o2qpCmMt6DXwiqJBq7FdvP06HUs",
+    api_key="AIzaSyB2UENPZ3O0GyCscmcNql64OvXbnM1E5Mg",
     base_url="https://generativelanguage.googleapis.com/v1beta/openai/"
 )
 
