@@ -1,4 +1,4 @@
-# 🤖 Complete AI & LLM Engineering Bootcamp
+# 🤖 Complete AI & LLM Engineering 
 
 Welcome to the **Complete AI & LLM Engineering Bootcamp** — your one-stop course to learn Python, Git, Docker, Pydantic, LLMs, Agents, RAG, LangChain, LangGraph, and Multi-Modal AI from the ground up.
 
