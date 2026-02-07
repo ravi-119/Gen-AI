@@ -242,3 +242,64 @@ If you want, I can also:
 * Convert this into a blog
 * Create a sample LangGraph project
 * Add RAG integration
+
+
+
+
+
+# Checkpointing in LangGraph with MongoDB
+
+## Overview
+
+In LangGraph, **checkpointing** is a mechanism that allows you to **save the state of your AI workflows or graphs** at certain points. This is useful when you have long-running AI processes, multi-step reasoning, or complex workflows, and you want to:
+
+- Resume from the last saved point if something fails
+- Keep track of workflow history
+- Analyze the progress or results of an AI agent
+
+When combined with **MongoDB**, checkpointing becomes **persistent**—your workflow state is stored in a database so that it survives application restarts or crashes.
+
+---
+
+## How Checkpointing Works
+
+1. **State Capture**:  
+   At certain points in your AI graph, the current state of nodes, edges, or variables is captured. This state can include:
+   - Node input/output
+   - Execution metadata
+   - Partial results
+
+2. **Save to MongoDB**:  
+   The captured state is then **saved as a document** in a MongoDB collection. Each checkpoint usually has:
+   - `checkpoint_id`: Unique identifier
+   - `graph_id`: The AI graph this belongs to
+   - `node_states`: Status and outputs of nodes
+   - `timestamp`: When the checkpoint was created
+
+3. **Resuming Workflow**:  
+   If the workflow fails or needs to pause, LangGraph can **load the latest checkpoint from MongoDB** and continue execution from that point, rather than starting over.
+
+---
+
+## Benefits of Using MongoDB for Checkpoints
+
+- **Persistence**: Data is stored safely even if your server crashes.
+- **Scalability**: MongoDB can handle checkpoints for many concurrent AI workflows.
+- **Querying & Analysis**: You can query previous checkpoints to debug, audit, or analyze performance.
+- **Flexibility**: MongoDB’s JSON-like documents match the structure of LangGraph states naturally.
+
+---
+
+## Example Schema in MongoDB
+
+```json
+{
+  "_id": "607f1f77bcf86cd799439011",
+  "checkpoint_id": "chk_001",
+  "graph_id": "graph_123",
+  "node_states": [
+    { "node_id": "node_1", "status": "completed", "output": "Hello world" },
+    { "node_id": "node_2", "status": "pending", "output": null }
+  ],
+  "timestamp": "2026-02-07T12:00:00Z"
+}
