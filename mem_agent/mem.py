@@ -31,6 +31,16 @@ config = {
                
         }
     },
+    
+    "graph_store":{
+        "provider": "neo4j",
+        "config": {
+            "url": "neo4j+s://24088203.databases.neo4j.io",
+            "username": "neo4j",
+            "password": "XfprNCGfvNfp6eGup7Krz3kYBdWndOp74UZNEHWG_o0"
+        }
+    },
+    
     "vector_store": {
         "provider": "qdrant",
         "config": {
